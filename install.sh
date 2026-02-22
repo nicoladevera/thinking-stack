@@ -17,9 +17,10 @@ install_command() {
   fi
 }
 
+KNOWN_COMMANDS=("conviction" "forum" "horizon" "premortem" "succinct")
+
 if [ -z "$1" ]; then
-  for dir in */; do
-    name="${dir%/}"
+  for name in "${KNOWN_COMMANDS[@]}"; do
     install_command "$name"
   done
 else
