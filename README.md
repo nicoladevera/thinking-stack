@@ -180,7 +180,7 @@ You don't need all five every time. Common sub-chains:
 
 ### Prerequisites
 
-- [Claude Code](https://claude.ai/code) installed and configured
+- [Claude Code](https://code.claude.com/docs) installed and configured
 - `/forum` requires agent teams, which are experimental and disabled by default — see the [Claude Code agent teams documentation](https://code.claude.com/docs/en/agent-teams) to enable them
 - All other commands are single-agent and work out of the box
 
