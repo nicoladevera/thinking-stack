@@ -181,7 +181,7 @@ You don't need all five every time. Common sub-chains:
 ### Prerequisites
 
 - [Claude Code](https://claude.ai/code) installed and configured
-- `/forum` requires multi-agent tools (`TeamCreate`, `SendMessage`, `Task`) — available in standard Claude Code installations
+- `/forum` requires agent teams, which are experimental and disabled by default — see the [Claude Code agent teams documentation](https://code.claude.com/docs/en/agent-teams.md) to enable them
 - All other commands are single-agent and work out of the box
 
 ### Install
