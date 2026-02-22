@@ -157,7 +157,7 @@ After delivering the audit, present this as plain text (not `AskUserQuestion`):
 
 > Want to go deeper? I can:
 > - Revisit a specific assumption and stress-test it further
-> - Run a devil's advocate argument against the confidence score
+> - Steelman the opposing view
 > - Design an additional test for the hardest-to-resolve unknown
 >
 > Just tell me what you'd like to explore, or type "done" to wrap up.

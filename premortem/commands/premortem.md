@@ -26,7 +26,7 @@ Use `AskUserQuestion` to ask up to 3 targeted clarifying questions. Only ask wha
 
 Once you have enough context, synthesize a **framing statement** in this form:
 
-> It is [time horizon] later. [Idea/decision] has failed. The team is doing a retrospective to understand what went wrong.
+> It is [time horizon] later. [Idea/decision] has failed.
 
 Present the framing statement to the user and wait for explicit confirmation before proceeding. If they correct or refine it, update accordingly.
 
@@ -55,7 +55,7 @@ Structure your output exactly as follows:
 ## Premortem: [Short Idea Title]
 
 **Framing Statement**
-*It is [time horizon] later. [Idea] has failed. Here's what went wrong.*
+*It is [time horizon] later. [Idea] has failed.*
 
 ---
 
