@@ -2,7 +2,7 @@
 
 You're making decisions faster than you can think. Operating on vibes, pattern-matching from past experience, and hoping the gaps don't matter. Then something blindsides you — a risk you didn't model, a consequence you didn't trace, an assumption you never questioned.
 
-**thinking-stack** is for founders, product managers, tech leads, and operators making high-stakes decisions under uncertainty.
+**thinking-stack** is for founders, product managers, tech leads, strategists, and operators making high-stakes decisions under uncertainty.
 
 This is not a prompt collection. It's a schema-driven reasoning system — each command produces a structured artifact you can act on, share, and revisit. Not conversation. Deliverables.
 
