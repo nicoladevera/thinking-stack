@@ -26,6 +26,12 @@ Each command targets a distinct reasoning capability. Together they cover the fu
 
 ---
 
+## Output Layer: /vault
+
+[`/vault`](./vault/README.md) is not a thinking command — it is a capture and canonization tool. Run it at the end of any session to promote the work into a structured, versioned personal archive: a human-readable Markdown artifact and a machine-readable JSONL index entry designed for longitudinal queries ("how has my thinking on this topic evolved?"). Vault is not included in the default install — see [`vault/README.md`](./vault/README.md) for setup.
+
+---
+
 ## What You Get
 
 Each command produces a structured deliverable, not open-ended conversation.
