@@ -52,7 +52,7 @@ After installing, set your vault path as described in Setup above.
 
 Vault takes no arguments. It reads the current conversation context automatically.
 
-Run it at the end of a session where real thinking happened — a premortem, a conviction audit, a forum debate, a horizon analysis, or a freeform strategic conversation worth preserving.
+Run it at the end of a session where real thinking happened — a blindspot audit, a premortem, a conviction audit, a forum debate, a horizon analysis, or a freeform strategic conversation worth preserving.
 
 ---
 
@@ -68,7 +68,7 @@ One gate. One question. If the conversation contains multiple thinking commands,
 
 Vault infers and suggests three things: a title, a type classification, and 2–4 tags. You confirm or adjust — you do not have to define these from scratch.
 
-Type options: `forum` / `premortem` / `horizon` / `conviction` / `succinct` / `synthesis` / `decision` / `note`
+Type options: `blindspot` / `forum` / `premortem` / `horizon` / `conviction` / `succinct` / `synthesis` / `decision` / `note`
 
 After confirmation, Vault asks one open question: *Why does this session matter to you?* Give the rough version — Vault writes it clean.
 
@@ -76,7 +76,7 @@ After confirmation, Vault asks one open question: *Why does this session matter 
 
 Vault extracts silently, in one of two modes depending on session type:
 
-**For thinking-stack commands (forum, premortem, horizon, conviction, succinct):** The full structured output is preserved verbatim — every section, table, and list — in a "Command Output" block. The session arc (input, what shifted, conclusion) wraps it with framing. The conclusion is extracted command-specifically: the thesis for succinct, the confidence score + decision rule for conviction, the recommendation + consensus signal for forum, and so on.
+**For thinking-stack commands (blindspot, forum, premortem, horizon, conviction, succinct):** The full structured output is preserved verbatim — every section, table, and list — in a "Command Output" block. The session arc (input, what shifted, conclusion) wraps it with framing. The conclusion is extracted command-specifically: the top priority gap + suggested action for blindspot, the thesis for succinct, the confidence score + decision rule for conviction, the recommendation + consensus signal for forum, and so on.
 
 **For freeform sessions (note, decision, synthesis):** A substantive 150–300 word prose narrative captures the actual thinking — what was discussed, the reasoning used, the key moves made, and the tensions surfaced.
 

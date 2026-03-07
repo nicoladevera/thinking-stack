@@ -22,7 +22,7 @@ VAULT_PATH: ~/Documents/vault
 
 ## Phase 1: Scan and Confirm
 
-Read back through the full conversation context. Identify all thinking-stack commands that were used (forum, premortem, horizon, conviction, succinct), the core topic, and whether this is a structured or freeform session.
+Read back through the full conversation context. Identify all thinking-stack commands that were used (blindspot, forum, premortem, horizon, conviction, succinct), the core topic, and whether this is a structured or freeform session.
 
 **If a single thinking command was used:**
 Use `AskUserQuestion` to confirm:
@@ -55,7 +55,7 @@ Based on the session content, infer the following. Do not ask the user to define
 
 **Title**: Infer from the session topic. Choose something specific and memorable, not generic.
 
-**Type**: Set to the command name if a thinking command was used (`forum`, `premortem`, `horizon`, `conviction`, `succinct`). For freeform sessions, infer from session content:
+**Type**: Set to the command name if a thinking command was used (`blindspot`, `forum`, `premortem`, `horizon`, `conviction`, `succinct`). For freeform sessions, infer from session content:
 - `synthesis` — session drawing together ideas from multiple threads or prior thinking
 - `decision` — session where the primary output was a concrete commitment or choice
 - `note` — shorter capture, idea, or reflection that does not fit the above
@@ -96,7 +96,7 @@ Do this work silently. Do not show your reasoning or intermediate steps. Produce
 
 ---
 
-### Command Mode (forum, premortem, horizon, conviction, succinct)
+### Command Mode (blindspot, forum, premortem, horizon, conviction, succinct)
 
 Preserve the command output exactly as produced — verbatim, including all sections, tables, headers, and lists. Do not summarize, compress, or editorialize. The structured output is the artifact.
 
@@ -107,6 +107,7 @@ Extract the session arc fields:
 **What shifted** — any refinements, clarifications, or changes that occurred during the session (back-and-forth before the output was produced). If nothing shifted, write "Nothing shifted materially — the command ran on the original input."
 
 **Key conclusion** — extract command-specific, verbatim where possible:
+- **blindspot** → the #1 Priority Gap + its corresponding Suggested Action
 - **premortem** → the "If this fails, it's probably because…" sentence from the output
 - **horizon** → the Predicted New Bottleneck from the New Bottleneck Prediction section
 - **forum** → the Recommendation line + Consensus Signal (e.g., "Proceed with X. Consensus: Majority 3–1.")
