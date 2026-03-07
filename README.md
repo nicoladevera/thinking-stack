@@ -18,7 +18,7 @@ Each command targets a distinct reasoning capability. Together they cover the fu
 
 | Command | Reasoning Role | Description |
 |---------|---------------|-------------|
-| [`/blindspot`](./blindspot/README.md) | Expand the frame | Surface gaps in the idea and your thinking — before you commit to an analysis path |
+| [`/blindspot`](./blindspot/README.md) | Surface what's missing | Audit what's absent from your idea and your thinking before committing to a direction |
 | [`/forum`](./forum/README.md) | Expand perspective | Multi-agent council debate that pressure-tests an idea through structured rounds |
 | [`/premortem`](./premortem/README.md) | Stress-test the decision | Assume the idea has already failed, work backward to find out why |
 | [`/horizon`](./horizon/README.md) | Model consequences | Trace causal chains forward across time bands to surface incentive shifts and scaling failures |
