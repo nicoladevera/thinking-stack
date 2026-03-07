@@ -12,12 +12,13 @@ Modern work moves fast, but thinking should not become shallow. **thinking-stack
 
 ---
 
-## The Five Commands
+## The Six Commands
 
 Each command targets a distinct reasoning capability. Together they cover the full arc from belief to action.
 
 | Command | Reasoning Role | Description |
 |---------|---------------|-------------|
+| [`/blindspot`](./blindspot/README.md) | Expand the frame | Surface gaps in the idea and your thinking — before you commit to an analysis path |
 | [`/forum`](./forum/README.md) | Expand perspective | Multi-agent council debate that pressure-tests an idea through structured rounds |
 | [`/premortem`](./premortem/README.md) | Stress-test the decision | Assume the idea has already failed, work backward to find out why |
 | [`/horizon`](./horizon/README.md) | Model consequences | Trace causal chains forward across time bands to surface incentive shifts and scaling failures |
@@ -38,6 +39,7 @@ Each command produces a structured deliverable, not open-ended conversation.
 
 | Command | Deliverable |
 |---------|-------------|
+| `/blindspot` | Gap taxonomy across 5 categories (frame, assumptions, perspectives, dimensions, cognitive posture) and 3 priority gaps |
 | `/forum` | Recommendation with consensus signal, dissenting positions, and concrete next steps |
 | `/premortem` | 10–14 failure causes with mechanisms, early warning signals, and cheap tests to run now |
 | `/horizon` | Causal chain map across 3 time bands with incentive shifts, scaling effects, and guardrails |
@@ -143,6 +145,7 @@ systematic AI-assisted development as the default workflow.
 
 | Question you're asking | Command |
 |------------------------|---------|
+| What am I not seeing? | `/blindspot` |
 | Is this a good idea? | `/forum` |
 | What could go wrong? | `/premortem` |
 | What does this set in motion? | `/horizon` |
@@ -159,26 +162,28 @@ The commands work standalone, but they chain naturally into two full arcs depend
 
 ```mermaid
 flowchart LR
-    forum1[forum] --> premortem1[premortem] --> horizon1[horizon] --> conviction1[conviction] --> succinct1[succinct]
+    blindspot1[blindspot] --> forum1[forum] --> premortem1[premortem] --> horizon1[horizon] --> conviction1[conviction] --> succinct1[succinct]
 ```
 
-Expand perspectives first, stress-test the leading option, model consequences, then ground your belief before compressing.
+Surface what's outside your frame first, then expand perspectives, stress-test the leading option, model consequences, and ground your belief before compressing.
 
 **Starting from a position** — you already have a belief to examine:
 
 ```mermaid
 flowchart LR
-    conviction2[conviction] --> forum2[forum] --> premortem2[premortem] --> horizon2[horizon] --> succinct2[succinct]
+    conviction2[conviction] --> blindspot2[blindspot] --> forum2[forum] --> premortem2[premortem] --> horizon2[horizon] --> succinct2[succinct]
 ```
 
-Audit the belief first so the debate is targeted, then run the same pressure sequence.
+Audit the belief first, then surface what the audit itself may have missed, before opening to debate and pressure-testing.
 
-You don't need all five every time. Common sub-chains:
+You don't need all six every time. Common sub-chains:
 
+- **blindspot → forum** — surface gaps in the frame, then debate the idea with those gaps visible
 - **forum → premortem** — debate an idea, then assume the winner fails
 - **premortem → horizon** — stress-test a decision, then trace long-range consequences
 - **horizon → succinct** — map consequences, then compress for stakeholders
-- **conviction → forum** — audit a belief, then open it to multi-perspective debate
+- **conviction → blindspot** — audit a belief, then surface what the audit didn't examine
+- **forum → blindspot** — after multi-perspective debate, audit what the whole session still missed
 
 ---
 
