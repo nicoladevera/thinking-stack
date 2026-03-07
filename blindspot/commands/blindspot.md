@@ -1,5 +1,5 @@
 ---
-description: Surface what you're not seeing — gaps in your idea and your thinking
+description: Audit what's absent from your idea and your thinking before committing to a direction
 argument-hint: [your idea, plan, or decision]
 allowed-tools: AskUserQuestion, WebSearch, WebFetch
 ---
