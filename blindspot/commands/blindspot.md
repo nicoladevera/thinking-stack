@@ -23,9 +23,7 @@ Use `AskUserQuestion` to ask 1–2 targeted clarifying questions. Only ask what'
 
 **If the input is ready**: proceed directly.
 
-Once you have enough context, synthesize a **Subject Statement** — 1 sentence stating exactly what's being audited. Surface it to the user before proceeding (no confirmation gate required — just present it and move on):
-
-> **Auditing:** [1 sentence stating the idea, plan, or decision being examined]
+Once you have enough context, synthesize a **Subject Statement** — 1 sentence stating exactly what's being audited. Use `AskUserQuestion` to present it and ask the user to confirm it accurately captures what they want audited. **Wait for explicit confirmation before proceeding.** If they correct or refine it, update accordingly.
 
 ---
 
@@ -132,6 +130,16 @@ The 3 most consequential gaps across all categories above. Ranked by impact: whi
 1. **[Gap]:** [Why this is the highest-priority gap — what's at stake if it remains unaddressed]
 2. **[Gap]:** [Why this matters most after the first]
 3. **[Gap]:** [Why this rounds out the top three]
+
+---
+
+### Suggested Actions
+
+One concrete action per priority gap — specific enough to execute, tied directly to the gap it addresses. Not generic advice; each action should name exactly what to do and why it addresses the gap.
+
+1. **[Action]:** [What to do — specific enough to act on — and which gap it closes]
+2. **[Action]:** [What to do and which gap it closes]
+3. **[Action]:** [What to do and which gap it closes]
 
 ---
 
