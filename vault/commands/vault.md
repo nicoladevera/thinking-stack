@@ -276,12 +276,20 @@ Use `Write` to create `{VAULT_PATH}/artifacts/{filename}`.
 
 ### Step 3: Append to the JSONL index
 
-Use `Bash` to append a single-line JSON entry:
+⚠️ **CRITICAL — READ BEFORE ACTING**: You MUST use `Bash` with `>>` for this step. **NEVER use the `Write` tool on `index.jsonl`** — the `Write` tool overwrites the entire file and permanently destroys all previous entries. This is the most common failure mode for this skill.
+
+Use `Bash`:
 ```
 echo '{...}' >> {VAULT_PATH}/index.jsonl
 ```
 
 `>>` creates `index.jsonl` automatically on the first vault run if it does not yet exist, then appends to it on every subsequent run. No separate initialization step is needed. Each vault operation adds exactly one line to the file.
+
+After appending, verify the write succeeded by reading back the last line:
+```
+tail -1 {VAULT_PATH}/index.jsonl
+```
+Confirm the output matches the entry you just wrote. If it does not match, surface an error to the user — do not proceed to Step 4.
 
 The entry must be a single line, no pretty-printing, all string values properly JSON-escaped (no unescaped quotes or literal newlines):
 
