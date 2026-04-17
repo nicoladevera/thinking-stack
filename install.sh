@@ -17,7 +17,7 @@ install_command() {
   fi
 }
 
-KNOWN_COMMANDS=("blindspot" "conviction" "forum" "horizon" "premortem" "succinct")
+KNOWN_COMMANDS=("blindspot" "conviction" "forum" "horizon" "premortem" "succinct" "vault")
 
 if [ -z "$1" ]; then
   for name in "${KNOWN_COMMANDS[@]}"; do

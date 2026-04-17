@@ -30,7 +30,7 @@ Vault will create the directory and its subdirectories automatically on first us
 
 ## Install
 
-Vault is not included in the default `./install.sh` install. Install it explicitly:
+Vault is included in the default `./install.sh` install. It is also available individually:
 
 ```bash
 # From the repo root
